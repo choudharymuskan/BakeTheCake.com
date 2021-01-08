@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+
+/* Navigation Bar */
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0;
+    /* justify-content: center; */
+
+}
+/* Navbar :Logo and image */
+#navbar{
+    position:relative;
+}
+
+#logo img{
+    width:40px;
+    height:40px;
+
+}
+/* Navbar :Logo */
+#logo{
+    margin:20px;
+    padding:15px;
+}
+/* NAVBAR LIST STYLING*/
+#navbar ul{
+    display:flex;
+    
+
+}
+#navbar::before{
+   content:"";
+   background-color:grey;
+   position: absolute;
+   height: 50%;
+   width: 100%;
+   z-index:-1;
+   opacity:0.7;  
+
+}
+#navbar ul li{
+   
+    list-style: none;
+    font-size:1.3rem;
+
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:20px;
+    margin:10px;
+    border-radius:20px; 
+    font-size: 1rem;
+     font-family: 'Courgette', cursive;
+     text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* SECTION STYLING */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:50px 20px;
+    justify-content: center;
+    align-items: center;
+    height: 250px; 
+}
+#home::before{
+    content:"";
+    background:url('hoarding.jpg') no-repeat  center center/cover;
+    background-size: cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0.9;  
+ 
+ }
+#home h1{
+    color:white;
+    text-align: center;
+    font-size:2.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 0.9rem  ;
+    font-family: 'Dancing Script', cursive;
+}
+ 
+ .btn{
+     padding:6px 20px;
+     border:2px solid white;
+     color:rgb(126, 119, 119);
+     margin:17px;
+     border-radius: 10px;
+     font-size:1rem;
+ }
+/* serves section */
+ #services{
+     margin:10px;
+     display:flex;
+     width:100%; 
+    
+ }
+ 
+ #services .box{
+     border:2px solid rosybrown;
+     width:30%;
+     padding:15px;
+     margin:3px;
+     border-radius: 23px;
+     background-color: #f8f4f4;
+    
+    
+    
+}
+
+ 
+ #services .box img{
+     height:200px;
+     width:250px;
+     display:block;
+     margin:auto;
+    
+    
+}
+
+ /* utility classes */
+ .h-primary{
+     font-size: 2rem;
+     padding:12px;
+     font-family: 'Dancing Script', cursive;
+ }
+ .h-secandary{
+    font-size: 1.5rem;
+    padding:12px;
+    font-family: 'Dancing Script', cursive;
+}
+.center{
+    text-align:center;
+}
+
+/* Client section */
+.client-section h1{
+   margin:50px;
+    
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    
+    /* position: absolute; */
+    
+}
+.client-section .client-items img{
+     height:200px;
+     width:250px;
+     display:block;
+     margin: 10px;
+     padding: 0px 50px;
+     border-radius: 50%;
+}
+#client-section::before{
+    content:"";
+    background-color:  #f5e5e5;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.9;  
+ 
+ }
+ #gallery1{
+     display:flex;
+     /* flex-direction:column; */
+ }
+ #gallery2{
+    display:flex;
+    /* flex-direction:column; */
+ }
+ 
+    .gallery{
+        display:flex;
+        margin:90px;
+    }
+
+.gallery .gallery-items img{
+    height:150px;
+    width:150px;
+    display:block;
+    margin: 10px;
+    padding: 70px;
+    border-radius: 30%;
+    
+    
+}
+
+ .gallery #galleryvertical{
+    writing-mode: vertical-lr; 
+ }
+ .gallery::before{
+    content:"";
+    background-image: url('galleryback.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 40%;
+    width: 97%;
+    margin:0px -70px ;
+    z-index:-1;
+    opacity:0.8;  
+ 
+ }
+
+ 
+ .copyright{
+    /* display:flex; */
+    margin:35px -15px ;
+    padding:20px;
+
+}
+.copyright h1{
+    font-size:1rem;
+}
+
+
+ .copyright::before{
+    content:"";
+    background-color: rgb(243, 196, 196);  
+    position: absolute;
+    height: 7%;
+    width: 100%;
+  
+    z-index:-1;
+    opacity:0.8;  
+ 
+ }

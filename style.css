@@ -219,7 +219,7 @@ html{
  }
  .gallery::before{
     content:"";
-    background-image: url('galleryback.jpg');
+    background-image: url('./img/galleryback.jpg');
     background-size: cover;
     position: absolute;
     height: 40%;
